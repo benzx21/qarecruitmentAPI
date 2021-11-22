@@ -32,7 +32,7 @@ public class qarecruitmenttest {
         responseSpecBuilder.log(LogDetail.ALL);
         responseSpecification = responseSpecBuilder.build();
     }
-
+    //Test to retrieve the product from the server and validate the response
     @Test
     public void shouldBeAbleToGetOneProduct() {
         given(requestSpecification).contentType(ContentType.JSON).
@@ -46,7 +46,7 @@ public class qarecruitmenttest {
 
     }
 
-
+//Test to delete the product from the server
     @Test
     public void shouldBeAbleToDelete() {
         given(requestSpecification).contentType(ContentType.JSON).
